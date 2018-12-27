@@ -1,5 +1,4 @@
 <div id="contact_form" class="mt-sm-30">
-    <h3 class="text-themecolor">{{ trans('themes::contact.form.title') }}</h3>
     <p class="fs-sm-08">{{ trans('themes::contact.messages.info') }}</p>
 
     <div class="alert alert-success" role="alert" v-show="success">

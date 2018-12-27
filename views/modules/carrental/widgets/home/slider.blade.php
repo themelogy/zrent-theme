@@ -75,7 +75,7 @@
 
 @push('js_inline')
     <script type="text/javascript">
-                @foreach($classes as $class)
+        @foreach($classes as $class)
         var swiper_{{ $loop->iteration }} = $('.swiper-offers-{{ $loop->iteration }} .swiper-container');
         @endforeach
 
@@ -153,10 +153,6 @@
         }
 
         jQuery(window).load(function () {
-            swipeUpdater();
-        });
-
-        jQuery(window).resize(function () {
             swipeUpdater();
         });
     </script>

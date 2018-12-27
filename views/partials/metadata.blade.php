@@ -9,16 +9,20 @@
 <link rel="shortcut icon" href="{{ Theme::url('img/logo/favicon.png') }}">
 <link rel="icon" type="image/png" href="{{ Theme::url('img/logo/favicon.png') }}">
 
-<!-- CSS Global -->
-{!! Theme::style('vendor/bootstrap/css/bootstrap.min.css') !!}
-{!! Theme::style('vendor/bootstrap-select/css/bootstrap-select.min.css') !!}
-{!! Theme::style('vendor/fontawesome/css/font-awesome.min.css') !!}
-{!! Theme::style('vendor/prettyphoto/css/prettyPhoto.css') !!}
-{!! Theme::style('vendor/owl-carousel2/assets/owl.carousel.min.css') !!}
-{!! Theme::style('vendor/owl-carousel2/assets/owl.theme.default.min.css') !!}
-{!! Theme::style('vendor/animate/animate.min.css') !!}
-{!! Theme::style('vendor/swiper/dist/css/swiper.min.css') !!}
-{!! Theme::style('vendor/datetimepicker/css/bootstrap-datetimepicker.min.css') !!}
-{!! Theme::style('css/custom-icons.css') !!}
-<!-- Theme CSS -->
-{!! Theme::style('css/theme.min.css') !!}
+<script async>
+    WebFontConfig = { google: {
+            families: [
+                'Roboto:400,700,300:latin-ext',
+                'Raleway:700,800,900,400,300:latin-ext',
+                'Open+Sans:400,300,600,700,800'
+            ]
+        }};
+    (function(d) {
+        var wf = d.createElement('script'), s = d.scripts[0];
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+    })(document);
+</script>
+
+{!! Theme::style('css/preloader.css') !!}

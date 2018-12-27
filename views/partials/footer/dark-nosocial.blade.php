@@ -11,7 +11,7 @@
                             <strong>{!! setting('theme::company-name') !!}</strong><br>
                             {!! setting('theme::address') !!}<br>
                             <abbr title="Telefon">T:</abbr> {{ setting('theme::phone') }}<br/>
-                            <abbr title="Mobil">M:</abbr> {{ setting('theme::phone2') }}<br/>
+                            <abbr title="Mobil">M:</abbr> {{ setting('theme::mobile') }}<br/>
                             <abbr title="Email">E:</abbr> {{ HTML::email(setting('theme::email')) }}
                         </address>
                     </div>

@@ -12,7 +12,7 @@ return [
         'title' => 'İletişim Formu'
     ],
     'messages'   => [
-        'info'    => 'Yukarıda belirtilen harita ve adres bilgilerimizden veya mesaj formunu doldurarak bize ulaşabilirsiniz.',
+        'info'    => 'Aşağıda belirtilen harita ve adres bilgilerimizden veya mesaj formunu doldurarak bize ulaşabilirsiniz.',
         'success' => 'Mesajınız için teşekkür ederiz. İncelenerek tarafınıza en kısa zamanda geri dönüş yapılacaktır.'
     ],
     'mail'       => [

@@ -37,6 +37,21 @@
     background-color: #f63f29;
     border-color: #f63f29;
   }
+  &.instagram {
+    background-color: #fafafa;
+    color: black;
+    i {
+      color: black !important;
+    }
+  }
+  &.linkedin {
+    background-color: #2e97ff;
+    border-color: #1e62a7;
+  }
+  &.whatsapp {
+    background-color: rgb(9, 182, 0);
+    border-color: rgb(6, 131, 0);
+  }
   i {
     color: #ffffff !important;
     font-size: 14px !important;

@@ -1,48 +1,51 @@
+<noscript id="deferred-styles">
+    <!-- CSS Global -->
+    {!! Theme::style('vendor/bootstrap/css/bootstrap.min.css') !!}
+    {!! Theme::style('vendor/fontawesome/css/font-awesome.css') !!}
+    {!! Theme::style('vendor/swiper/dist/css/swiper.min.css') !!}
+    {!! Theme::style('css/custom-icons.css') !!}
+    <link rel="stylesheet" href="{{ elixir('css/theme.min.css', 'themes/zrent') }}">
+    {!! Theme::style('vendor/animate/animate.min.css') !!}
+    {!! Theme::style('vendor/datetimepicker/css/bootstrap-datetimepicker.min.css') !!}
+    {!! Theme::style('vendor/prettyphoto/css/prettyPhoto.css') !!}
+    {!! Theme::style('vendor/bootstrap-select/css/bootstrap-select.min.css') !!}
+    {!! Theme::style('vendor/owl-carousel2/assets/owl.carousel.min.css') !!}
+    {!! Theme::style('vendor/owl-carousel2/assets/owl.theme.default.min.css') !!}
+    @stack('css-stack')
+    {!! Asset::css() !!}
+</noscript>
+
 <!-- Head Libs -->
 {!! Theme::script('vendor/jquery/jquery-1.11.1.min.js') !!}
-{!! Theme::script('vendor/modernizr.custom.js') !!}
+{!! Theme::script('vendor/modernizr.custom.js', ['defer']) !!}
+
 
 <!--[if lt IE 9]>
-{!! Theme::script('vendor/html5shiv.js') !!}
-{!! Theme::script('vendor/respond.min.js') !!}
+{!! Theme::script('vendor/html5shiv.js', ['defer']) !!}
+{!! Theme::script('vendor/respond.min.js', ['defer']) !!}
 <![endif]-->
 
+{!! Theme::script('vendor/jquery.sticky.min.js', ['defer']) !!}
+{!! Theme::script('vendor/jquery.easing.min.js', ['defer']) !!}
+{!! Theme::script('vendor/jquery.smoothscroll.min.js', ['defer']) !!}
+{!! Theme::script('vendor/jquery.unveil.min.js', ['defer']) !!}
+{!! Theme::script('vendor/superfish/js/superfish.min.js', ['defer']) !!}
+{!! Theme::script('vendor/owl-carousel2/owl.carousel.min.js', ['defer']) !!}
+
 <!-- JS Global -->
-{!! Theme::script('vendor/bootstrap/js/bootstrap.min.js') !!}
-{!! Theme::script('vendor/bootstrap-select/js/bootstrap-select.min.js') !!}
-{!! Theme::script('vendor/superfish/js/superfish.min.js') !!}
-{!! Theme::script('vendor/prettyphoto/js/jquery.prettyPhoto.js') !!}
-{!! Theme::script('vendor/owl-carousel2/owl.carousel.min.js') !!}
-{!! Theme::script('vendor/jquery.sticky.min.js') !!}
-{!! Theme::script('vendor/jquery.easing.min.js') !!}
-{!! Theme::script('vendor/jquery.smoothscroll.min.js') !!}
-{!! Theme::script('vendor/swiper/dist/js/swiper.min.js') !!}
-{!! Theme::script('vendor/datetimepicker/js/moment-with-locales.min.js') !!}
-{!! Theme::script('vendor/datetimepicker/js/bootstrap-datetimepicker.min.js') !!}
+{!! Theme::script('vendor/bootstrap/js/bootstrap.min.js', ['defer']) !!}
+{!! Theme::script('vendor/bootstrap-select/js/bootstrap-select.min.js', ['defer']) !!}
+{!! Theme::script('vendor/datetimepicker/js/moment-with-locales.min.js', ['defer']) !!}
+{!! Theme::script('vendor/datetimepicker/js/bootstrap-datetimepicker.min.js', ['defer']) !!}
+{!! Theme::script('vendor/prettyphoto/js/jquery.prettyPhoto.js', ['defer']) !!}
+{!! Theme::script('vendor/swiper/dist/js/swiper.min.js', ['defer']) !!}
+
+
 
 @stack('js-stack')
+{!! Asset::js('footer') !!}
 
-<!-- JS Page Level -->
-{!! Theme::script('js/theme.js') !!}
-
-<script type="text/javascript"> WebFontConfig = {
-        google: {
-            families: [
-                'Roboto:400,700,300:latin-ext',
-                'Raleway:700,800,900,400,300:latin-ext',
-                'Open+Sans:400,300,600,700,800'
-            ]
-        }
-    };
-    (function () {
-        var wf = document.createElement('script');
-        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-    })();
-</script>
+<script src="{{ elixir('js/theme.min.js', 'themes/zrent') }}"></script>
 
 @stack('js_inline')
 

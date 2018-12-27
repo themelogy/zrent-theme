@@ -40,7 +40,7 @@
                                     <strong>{{ trans('themes::theme.contact.phone') }}:</strong><br>
                                     {{ setting('theme::phone') }}<br>
 									<strong>Mobile:</strong><br>
-                                    {{ setting('theme::phone2') }}
+                                    {{ setting('theme::mobile') }}
                                 </div>
                             </div>
                             <div class="media">
