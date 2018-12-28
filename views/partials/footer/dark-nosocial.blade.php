@@ -40,6 +40,7 @@
                             <div class="widget">
                                 <p>Bizi takip edin</p>
                                 @include('partials.components.socials')
+                                {!! Menu::render('ext-links', \Themes\Rentacar\Presenter\FooterMenuLinksPresenter::class) !!}
                             </div>
                         </div>
                     </div>

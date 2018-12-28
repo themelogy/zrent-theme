@@ -42,7 +42,7 @@
         @foreach($childs->chunk($list->get('chunkSize')) as $chunks)
             <div class="row">
                 @foreach($chunks as $child)
-                    <div class="col-md-{{ colSize($list->get('columnSize'), $list->get('hasColumn'), $loop) }}">
+                    <div class="col-md-{{ colSize($list->get('columnSize'), $list->get('hasColumn'), $loop) }} m-bot-30">
                         <div class="thumbnail">
                             <a href="{{ $child->url }}">
                                 @if(($image = $child->present()->firstImage($width,$height,$mode,$quality)) && $hasImg)

@@ -459,22 +459,7 @@ jQuery(document).ready(function () {
 jQuery(window).load(function () {
     // Preloader
     $('#status').fadeOut();
-    $('#preloader').delay(200).fadeOut(200);
-    // Isotope
-    if ($().isotope) {
-        isotopeContainer.isotope({ // initialize isotope
-            itemSelector: '.isotope-item' // options...
-            //,transitionDuration: 0 // disable transition
-        });
-        isotopeFiltrable.on('click', function(){ // filter items when filter link is clicked
-            var selector = $(this).attr('data-filter');
-            isotopeFiltrable.parent().removeClass('current');
-            $(this).parent().addClass('current');
-            isotopeContainer.isotope({filter: selector});
-            return false;
-        });
-        isotopeContainer.isotope('reLayout'); // layout/reLayout
-    }
+    $('#preloader').fadeOut(200);
     // Scroll to hash
     if (location.hash != '') {
         var hash = '#' + window.location.hash.substr(1);
